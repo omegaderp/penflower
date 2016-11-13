@@ -1,9 +1,17 @@
-<html>
-<head>
+<html class="gr__atdplogs_berkeley_edu"><head>
 	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="http://atdplogs.berkeley.edu/yzhong/aic/_test/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css"><style>
+  input {
+  width: 250px;
+  height: 30px;
+  }
+#basicUser, #playerProf {
+  float: right;
+  margin: auto;text-align: right; clear:right;
+  }
+</style>
 </head>
-<body>
+<body data-gr-c-s-loaded="true">
 	<div class="navbar">
 		<img src="logo.jpg" alt="logo" id="logo">
 		<nav>
@@ -14,18 +22,18 @@
 		</nav>
 	</div>
 	<div>
-				<form action="newAccount.php" method="post">
+				<form action="newAccount.php" method="post" id="form">
 		<h1>Create a penflower account</h1>
-			<h3>Basic User Information:</h3>
-			<div>
-				<p>First Name: <input type="text" name="firstName" required="" maxlength="15"></p>
-				<p>Last Name: <input type="text" name="lastName" required="" maxlength="30"></p>
+			
+			<div id="basicUser">
+				<h3>Basic User Information:</h3><p>First Name: <input type="text" name="firstName" required="" maxlength="15" class="aName"></p>
+				<p>Last Name: <input type="text" name="lastName" required="" maxlength="30" class="aName"></p>
 				<p>Date of Birth: <input type="date" name="dob" required=""></p>
 				<p>Email: <input type="email" name="email" required=""></p>
 			</div>
-			<h3>Player Profile:</h3>
-			<div>
-				<p>Username: <input type="text" name="username" required="" maxlength="15"></p>
+			
+			<div id="playerProf">
+				<h3>Player Profile:</h3><p>Username: <input type="text" name="username" required="" maxlength="15"></p>
 				<p>Password: <input type="password" name="password" required=""></p>
 				<p>Confirm Password: <input type="password" name="password2" required=""></p>
 			</div>
@@ -35,5 +43,4 @@
 		<br>
 		<p><span>Already have an account?</span> <a href="login.php">Sign In!</a></p>
 	</div>
-  </body>
-  </html>
+</body></html>
