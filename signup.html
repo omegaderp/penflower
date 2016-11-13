@@ -1,10 +1,11 @@
 <html class="gr__atdplogs_berkeley_edu"><head>
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css"><style>
-  input {
+  input:not(#submitBut) {
   width: 250px;
-  height: 30px;
+  height: 30px; padding-left: 5px;
   }
+  
 #basicUser, #playerProf {
 	width: 40%; min-width:450px; max-width: 600px; 
   margin: auto;
@@ -19,11 +20,11 @@
   #submitBut {
   margin: auto;
   width: 150px;
-  height: 40px;
+  height: 40px; padding:5px; 
   background-color: ; border-width: 1px; border-color: gray; border-style: solid;
   }
-  button:hover { 
-  background-color: yellow;
+  #submitBut:hover{ 
+  background-color: #b3b3b3;
   }
   #fullQ {
   margin: auto;
@@ -37,6 +38,8 @@
 #alreadyFoot {
   text-align: center;
   }
+  
+  
 </style>
 </head>
 <body data-gr-c-s-loaded="true">
@@ -71,5 +74,4 @@
 		<br>
 		<p id="alreadyFoot"><span>Already have an account?</span> <a href="login.php">Sign In!</a></p>
 	</div>
-
 </body></html>
