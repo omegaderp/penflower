@@ -6,8 +6,36 @@
   height: 30px;
   }
 #basicUser, #playerProf {
-  float: right;
-  margin: auto;text-align: right; clear:right;
+	width: 40%; min-width:450px; max-width: 600px; 
+  margin: auto;
+  text-align: right; 
+
+  overflow: hidden;
+  }
+  #form {
+  overflow:hidden; margin: auto;
+  text-align: center; 
+  }
+  #submitBut {
+  margin: auto;
+  width: 150px;
+  height: 40px;
+  background-color: ; border-width: 1px; border-color: gray; border-style: solid;
+  }
+  button:hover { 
+  background-color: yellow;
+  }
+  #fullQ {
+  margin: auto;
+  overflow: hidden; width: 90%; min-width: 100px; max-width: 1200px; 
+  }
+  h2, h3 {
+  text-align: center;
+  }
+  p:not(#alreadyFoot) {
+  width: 420px;}
+#alreadyFoot {
+  text-align: center;
   }
 </style>
 </head>
@@ -21,7 +49,7 @@
 			<a href="signup.php" class="link">sign up</a>
 		</nav>
 	</div>
-	<div>
+	<div id="fullQ">
 				<form action="newAccount.php" method="post" id="form">
 		<h1>Create a penflower account</h1>
 			
@@ -38,9 +66,10 @@
 				<p>Confirm Password: <input type="password" name="password2" required=""></p>
 			</div>
 			<br>
-			<input type="submit" value="Create Account">
+			<input type="submit" value="Create Account" id="submitBut">
 		</form>
 		<br>
-		<p><span>Already have an account?</span> <a href="login.php">Sign In!</a></p>
+		<p id="alreadyFoot"><span>Already have an account?</span> <a href="login.php">Sign In!</a></p>
 	</div>
+
 </body></html>
